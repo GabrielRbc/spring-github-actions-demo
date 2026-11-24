@@ -1,0 +1,18 @@
+name: Tâche planifiée Linux
+
+on:
+  
+  workflow_dispatch:
+  #schedule:
+  #  - cron: '0 * * * *'
+
+jobs:
+  execution-linux:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Afficher le message de récupération du code source
+        run: echo "Récupération du code source"
+
+      - name: Afficher le message de fin de la récupération du code source
+        run: echo "Fin de la récupération du code source"
